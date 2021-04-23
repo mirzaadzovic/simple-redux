@@ -1,10 +1,10 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "./App.css";
 import Counter from "./components/Counter";
-import counter from "./reducers/counter";
-
+import decrement from "./actions/decrement";
 function App() {
   const counter = useSelector((state) => state.counter);
+  const dispatch = useDispatch();
 
   return (
     <div className="App">
@@ -14,6 +14,14 @@ function App() {
           <b>Total: </b>
           {counter}
         </p>
+        {counter ? (
+          <button
+            className="btn btn-danger"
+            onClick={() => dispatch({ type: "RESET_ALL" })}
+          >
+            Reset all
+          </button>
+        ) : null}
       </div>
       <Counter by={1} />
       <Counter by={2} />

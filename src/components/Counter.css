@@ -15,7 +15,7 @@
 
 .Counter__count {
   animation: fadeIn 0.7s forwards;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 @keyframes fadeIn {

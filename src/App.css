@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.ukupno {
+  position: sticky;
+  top: 0;
+  font-size: 22px;
+  box-sizing: border-box;
+  padding: 20px;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  z-index: 1;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

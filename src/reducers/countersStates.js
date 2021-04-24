@@ -30,16 +30,14 @@ const countersStates = (state = counters, action) => {
   switch (action.type) {
     case "INCREMENT":
       return state.map((c) =>
-        c.id == action.by ? { id: c.id, counter: c.counter + action.by } : c
+        c.id == action.by ? {id: c.id, counter: c.counter + action.by} : c
       );
     case "DECREMENT":
       return state.map((c) =>
-        c.id == action.by ? { id: c.id, counter: c.counter - action.by } : c
+        c.id == action.by ? {id: c.id, counter: c.counter - action.by} : c
       );
     case "RESET":
-      return state.map((c) =>
-        c.id == action.by ? { id: c.id, counter: 0 } : c
-      );
+      return state.map((c) => (c.id == action.by ? {id: c.id, counter: 0} : c));
     default:
       return counters;
   }

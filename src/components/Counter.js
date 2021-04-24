@@ -22,7 +22,7 @@ const Counter = ({by}) => {
 
   return (
     <div className="Counter">
-      <h4 style={{wordWrap: "break-word"}}>Increment/Decrement by {by}</h4>
+      <h4 style={{wordWrap: "break-word"}}>-/+ {by}</h4>
       <p className="Counter__count">{!counter ? <b>zero</b> : counter} </p>
       <button
         className="btn btn-secondary"

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Redux</h2>
+      <h2>Redux Counters</h2>
       <div className="ukupno">
         <p
           style={{
